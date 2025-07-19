@@ -1,0 +1,65 @@
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pp-one {
+  margin: 5rem auto;
+  height: 75vh;
+  width: 75rem;
+  border-radius: 10px;
+  transition: transform 0.8s ease;
+
+
+
+  /* background: linear-gradient(270deg, #ff6a00, #ee0979, #00c9ff); */
+  /* background: linear-gradient(270deg, #ff6a00, #ee0979, #ff6a00);  */
+  /* background: linear-gradient(270deg, #00c9ff, #92fe9d, #00c9ff); */
+  /* background: linear-gradient(270deg, #20002c, #695f6c, #20002c); */
+  background: linear-gradient(270deg, #00f260, #0575e6, #00f260);
+  /* background: linear-gradient(270deg, #a1c4fd, #c2e9fb, #a1c4fd); */
+
+
+
+  background-size: 600% 600%;
+  animation: gradientMove 8s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+.pp-one:hover{
+    transform: scale(1.008);
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+
+.pp-header{
+    /* display: flex; */
+    padding: .8rem 2rem;
+    text-align: end;
+}
+
+.pp-main-container{
+    display: flex;
+    /* text-align: center; */
+}
+
+.pp-left-card{
+    margin: 3.4rem 6rem;
+    line-height: 2rem;
+    max-width: 34rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}

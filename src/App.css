@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* App.css */
+
+.app-container {
+  perspective: 1000px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-wrapper {
+  width: 80%;
+  height: 90%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.8s ease;
+}
+
+.card-wrapper.flipped {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+}
+
+/* my project */
+
+.project-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 80%;
+  border: 2px solid white;
+  margin: 3px 39px;
+  border-radius: 10px;
+}
+
+.project-left {
+  margin: 3rem 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.project-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.project-img {
+  width: 31rem;
+    border-radius: 10px;
+    border: 1px solid white;
+    padding: 12px;
+    margin: 0px 8px;
+}
+.project-img-heaading {
+  font-family: "Lobster";
+  color: black;
+  font-size: 2rem;
+  text-decoration: underline;
+}
+.image-slider-container{
+  display: flex;
+  align-items: center;
+}
+
+.project-img{
+  width: 31rem;
+  border: 1px solid white;
+  padding: 7px;
+  border-radius: 10px;
+}
+
+.arrow-button{
+  font-size: 23px;
+    padding: 4px 8px;
+}
