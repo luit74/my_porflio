@@ -28,7 +28,7 @@ const LeftSide = ({ handleClick }) => {
         }}
         className="font-comforta"
       >
-        Frontend Developer skilled in HTML, CSS, JavaScript, React.js, and
+        Frontend Developer with experience more than <b style={{color:'red' , fontSize:'larger'}} >1 year</b> ,  skilled in HTML, CSS, JavaScript, React.js, and
         Next.js. Experienced in building responsive and user-friendly web
         applications, integrating APIs, and creating pixel-perfect UIs.
         Proficient in Git-based team collaboration, debugging, and delivering
