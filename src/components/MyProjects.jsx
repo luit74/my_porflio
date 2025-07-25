@@ -49,8 +49,16 @@ const MyProject = ({ handleClick }) => {
           >
             {projData.title}
           </h2>
-          <p style={{ fontSize: "1.2rem" , lineHeight:'2.1rem' , maxHeight: '22rem',
-    overflow: 'scroll' }}>{projData.description}</p>
+          <p
+            style={{
+              fontSize: "1.2rem",
+              lineHeight: "2.1rem",
+              maxHeight: "22rem",
+              overflow: "scroll",
+            }}
+          >
+            {projData.description}
+          </p>
           <button className="button-89">
             <a
               style={{
@@ -69,8 +77,16 @@ const MyProject = ({ handleClick }) => {
 
         <div className="project-right">
           <h2 className="font-bungee">OverView</h2>
-          <div style={{display:'flex' , alignItems:'center' , marginRight:'10px'}}>
-            <button className="arrow-button" onClick={nextSlide}>❮</button>
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              marginRight: "10px",
+            }}
+          >
+            <button className="arrow-button" onClick={nextSlide}>
+              ❮
+            </button>
             <img
               className="project-img"
               src={projData.image[imgCurrentIndex]}
@@ -78,25 +94,10 @@ const MyProject = ({ handleClick }) => {
                 imgCurrentIndex + 1
               }`}
             />
-            
-            <button className="arrow-button" onClick={prevSlide}>❯</button>
-          </div>
-          {/* <div
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              gap: "16px",
-              marginTop:'19px',
-              alignItems:'center'
-            }}
-          >
             <button className="arrow-button" onClick={prevSlide}>
-              ❮
-            </button>
-            <button className="arrow-button" onClick={nextSlide}>
               ❯
             </button>
-          </div> */}
+          </div>
         </div>
       </div>
 
@@ -104,14 +105,19 @@ const MyProject = ({ handleClick }) => {
         style={{
           display: "flex",
           justifyContent: "center",
-          alignItems:'center',
+          alignItems: "center",
           gap: "2rem",
           marginTop: "9px",
         }}
       >
-        <button className="arrow-button" onClick={prevProject}> ❮ </button>
+        <button className="arrow-button" onClick={prevProject}>
+          {" "}
+          ❮{" "}
+        </button>
         <h2>Slide Projects</h2>
-        <button className="arrow-button" onClick={nextProject}> ❯ </button>
+        <button className="arrow-button" onClick={nextProject}>
+        ❯
+        </button>
       </div>
     </div>
   );

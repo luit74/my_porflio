@@ -9,6 +9,7 @@ const LeftSide = ({ handleClick }) => {
           Hello , my name is
         </p>
         <p
+        className="p-style"
           style={{
             fontSize: "5rem",
             fontWeight: "600",
@@ -18,13 +19,22 @@ const LeftSide = ({ handleClick }) => {
           Luit Dusad
         </p>
       </div>
-      <p className="font-comforta">
-        I’m a frontend developer with a love for clean code, responsive layouts,
-        and the occasional late-night bug hunt (a.k.a. my version of a treasure
-        hunt). Whether it's crafting pixel-perfect UI or battling that one div
-        that just won’t center — I’m all in. I believe great user experiences
-        start with great code… and a good sense of humor helps too.
+      <p
+        style={{
+          fontSize: "1.2rem",
+          lineHeight: "2.1rem",
+          maxHeight: "18rem",
+          overflow: "scroll",
+        }}
+        className="font-comforta"
+      >
+        Frontend Developer skilled in HTML, CSS, JavaScript, React.js, and
+        Next.js. Experienced in building responsive and user-friendly web
+        applications, integrating APIs, and creating pixel-perfect UIs.
+        Proficient in Git-based team collaboration, debugging, and delivering
+        performance-optimized solutions.
       </p>
+      
       <div
         style={{
           display: "flex",
@@ -39,13 +49,15 @@ const LeftSide = ({ handleClick }) => {
             style={{
               textDecoration: "none",
               color: "black",
-              display:"flex",
-              gap:'10px'
+              display: "flex",
+              gap: "10px",
             }}
             href="https://www.linkedin.com/in/luit-dusad-75a4111b4/"
             target="_blank"
           >
-            <div style={{fontSize:'1.2rem' , fontWeight:'bold'}}>LinkedIn</div>
+            <div style={{ fontSize: "1.2rem", fontWeight: "bold" }}>
+              LinkedIn
+            </div>
             <img style={{ width: "23px" }} src="/linkedIn.svg" alt="" />
           </a>
         </button>
